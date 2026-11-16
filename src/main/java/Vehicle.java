@@ -1,8 +1,18 @@
 public class Vehicle {
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+    }
+
     private String color;
     private int numberOfPassengers;
     private int cargoCapacity;
     private int fuelCapacity;
+
+    public Vehicle() {
+    }
 
     public String getColor() {
         return color;
@@ -35,4 +45,5 @@ public class Vehicle {
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
+
 }
